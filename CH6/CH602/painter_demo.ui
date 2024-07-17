@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>painter_demo</class>
+ <widget class="QWidget" name="painter_demo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>painter_demo</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="canvas" name="canvas_widget" native="true"/>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="shape_label">
+       <property name="text">
+        <string>Shape</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="shape_box"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="pen_color_label">
+       <property name="text">
+        <string>Pen color</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pen_color_box">
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="pen_width_label">
+       <property name="text">
+        <string>Pen width</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="pen_width_box">
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="pen_capstyle_label">
+       <property name="text">
+        <string>Pen cap style</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="pen_capstyle_box"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="pen_joinstyle_label">
+       <property name="text">
+        <string>Pen join style</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="pen_joinstyle_box"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="fill_rule_label">
+       <property name="text">
+        <string>Fill rule(polygon,path only)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="fill_rule_box"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="spread_label">
+       <property name="text">
+        <string>Spread type</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="spread_box"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="brush_color_label">
+       <property name="text">
+        <string>Brush color</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="brush_color_box">
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="brush_style_label">
+       <property name="text">
+        <string>Brush style</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QComboBox" name="brush_style_box"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>canvas</class>
+   <extends>QWidget</extends>
+   <header>canvas.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

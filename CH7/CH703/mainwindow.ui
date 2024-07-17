@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>779</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>779</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="clear_action"/>
+   </widget>
+   <widget class="QMenu" name="element_menu">
+    <property name="title">
+     <string>Element</string>
+    </property>
+    <addaction name="ellipse_action"/>
+    <addaction name="polygon_action"/>
+    <addaction name="text_action"/>
+    <addaction name="rect_action"/>
+    <addaction name="pixmap_action"/>
+    <addaction name="flashitem_action"/>
+    <addaction name="animation_action"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="element_menu"/>
+  </widget>
+  <action name="clear_action">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="ellipse_action">
+   <property name="text">
+    <string>Ellipse</string>
+   </property>
+  </action>
+  <action name="polygon_action">
+   <property name="text">
+    <string>Polygon</string>
+   </property>
+  </action>
+  <action name="text_action">
+   <property name="text">
+    <string>Text</string>
+   </property>
+  </action>
+  <action name="rect_action">
+   <property name="text">
+    <string>Rect</string>
+   </property>
+  </action>
+  <action name="pixmap_action">
+   <property name="text">
+    <string>Pixmap</string>
+   </property>
+  </action>
+  <action name="flashitem_action">
+   <property name="text">
+    <string>Flash Item</string>
+   </property>
+  </action>
+  <action name="animation_action">
+   <property name="text">
+    <string>Animation</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
