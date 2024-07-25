@@ -1,0 +1,8 @@
+First,15,28,1
+Second,25,28,9
+Third,0,26,9
+Fourth,1,9,0
+Fifth,18,4,0
+Sixth,12,2,1
+Seventh,4,21,4
+Eighth,21,24,6
