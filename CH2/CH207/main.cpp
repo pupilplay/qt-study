@@ -2,7 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     qDebug()<<qAbs<int>(-123);
     qDebug()<<qAbs<double>(12.34);
     qDebug()<<qMax<QString>("hello","world");
@@ -13,5 +12,5 @@ int main(int argc, char *argv[])
     qDebug()<<"num1="<<num1<<" num2="<<num2;
     qSwap(num1,num2);
     qDebug()<<"num1="<<num1<<" num2="<<num2;
-    return a.exec();
+    return 0;
 }

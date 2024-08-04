@@ -2,7 +2,6 @@
 #include<QDebug>
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     QList<int> list;
     list<<1<<2<<3;
     for(QListIterator<int> it(list);it.hasNext();)
@@ -16,5 +15,5 @@ int main(int argc, char *argv[])
     {
         qDebug()<<reverse_it.peekPrevious();
     }
-    return a.exec();
+    return 0;
 }

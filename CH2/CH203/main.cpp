@@ -2,7 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     QList<int>list{1};
     list.insert(list.end(),2);
     list.push_back(3);
@@ -33,5 +32,5 @@ int main(int argc, char *argv[])
     {
         qDebug()<<list[i];
     }
-    return a.exec();
+    return 0;
 }

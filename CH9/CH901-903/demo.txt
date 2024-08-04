@@ -1,0 +1,1 @@
+It is a demonstration here, using QFile to read.

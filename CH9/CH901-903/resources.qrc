@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="demo.txt">demo.txt</file>
+    </qresource>
+</RCC>

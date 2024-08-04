@@ -2,13 +2,12 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     QMap<QString,QString>map;
     map.insert("key1","value1");
     map["abc"]="value2";
     map.insert("zzz","value3");
     map.insert("ABC","value4");
-    //ABC<abc<key1<zzz
+    //"ABC"<"abc"<"key1"<"zzz"
     for(QMapIterator<QString,QString>it_java(map);it_java.hasNext();it_java.next())
     {
         qDebug()<<it_java.peekNext().key()<<" "<<it_java.peekNext().value();
@@ -31,5 +30,5 @@ int main(int argc, char *argv[])
     {
         qDebug()<<key<<value;
     }
-    return a.exec();
+    return 0;
 }

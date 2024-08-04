@@ -2,7 +2,6 @@
 #include<QVariant>
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     QVariant v(52);
     qDebug()<<v.toInt();
     qDebug()<<v.toChar();
@@ -32,5 +31,5 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    return a.exec();
+    return 0;
 }

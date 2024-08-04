@@ -2,7 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
     QList<int> list{1,2,3,4,5,6,7,8,9};
     for(QMutableListIterator<int>it(list);it.hasNext();it.next())
     {
@@ -16,5 +15,5 @@ int main(int argc, char *argv[])
         }
         qDebug()<<list;
     }
-    return a.exec();
+    return 0;
 }
