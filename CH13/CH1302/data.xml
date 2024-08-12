@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<archive>
+		<car id="1" >
+			<detail number="01">Engine displacement:1234mL</detail>
+			<detail number="02">Price: 1000000$</detail>
+			<detail number="03">Emission: 3</detail>
+			<detail number="04">Fuel comsumption: 6</detail>
+			<detail number="05">Power: 68/5800</detail>
+		</car>
+	</archive>
