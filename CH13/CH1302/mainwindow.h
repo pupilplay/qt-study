@@ -30,11 +30,12 @@ private slots:
     void update_car_detail(const QModelIndex &index);
     void update_manufactory_profile(const QModelIndex &index);
 
-
 private:
-    void read_car_data();
     QModelIndex manufactory_index(const QString &manufactory);
     void update_detail_list(QDomNode car);
+    void remove_car_from_file(int id);
+    void remove_car_from_database(const QModelIndex &index);
+    void decrease_car_count(const QModelIndex &index);
     Ui::MainWindow *ui;
     QFile *file;
     QDomDocument data;

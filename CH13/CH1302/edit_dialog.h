@@ -27,6 +27,8 @@ private slots:
 
     void on_rever_button_clicked();
 
+    void on_cancel_button_clicked();
+
 private:
     int new_manufactory(const QString &manufactory,const QString &address);
     int new_car(const QString &name,int manufactory_id);

@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Sql)
 find_package(Qt6 REQUIRED COMPONENTS Xml)
 
@@ -28,7 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         connect_dialog.h connect_dialog.cpp connect_dialog.ui
-        resources.qrc
+
         edit_dialog.h edit_dialog.cpp edit_dialog.ui
     )
 # Define target properties for Android with Qt 6 as:
@@ -52,6 +53,7 @@ endif()
 target_link_libraries(CH1302 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(CH1302 PRIVATE Qt6::Sql)
 target_link_libraries(CH1302 PRIVATE Qt6::Xml)
+target_link_libraries(CH1302 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

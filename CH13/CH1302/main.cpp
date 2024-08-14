@@ -10,8 +10,10 @@ int main(int argc, char *argv[])
     {
         return -1;
     }
-    QFile *car_detail=new QFile(":/data.xml");
+    QFile *car_detail=new QFile("data.xml");
     MainWindow w("manufactories","cars",car_detail);
     w.show();
-    return a.exec();
+    a.exec();
+    car_detail->deleteLater();
+    return 0;
 }
